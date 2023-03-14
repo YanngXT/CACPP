@@ -1,3 +1,5 @@
+This is a deep learning model for ACP and non-ACP classification based on CNN and contrast learning
+
 # Dataset
 
 AntiACP2.0_Alternate and AntiACP2.0_Main comes from the server of AntiCP 2.0
