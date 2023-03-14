@@ -1,3 +1,5 @@
+# CACPP
+
 This is a deep learning model for ACP and non-ACP classification based on CNN and contrast learning
 
 # Dataset
@@ -13,3 +15,7 @@ The construction of Dataset1, Dataset2, Dataset3, Dataset4, Dataset5 is followed
 | Dataset 3 | Randomly selected 40% peptides of all ACPs (387)  | Same as Dataset1 (193)                         | Same as Dataset1 (1440)                               | Same as Dataset1 (360)                          |
 | Dataset 4 | Randomly selected 80% peptides of all ACPs (777)  | The rest 20% peptides of all ACPs (193)        | Negative samples in Alternate Dataset for train(776)  | Negative samples in Main Dataset for test (172) |
 | Dataset 5 | Same as Dataset 4 (777)                           | Same as Dataset 4 (193)                        | Negative samples in Main Dataset for train (689)      | Same as Dataset 4 (172)                         |
+
+# How to use it
+
+In banch "master", you can find [train_and_test_AntiACP_Main.py](https://github.com/yanngfengwu/CACPP/blob/master/model/train_and_test_AntiACP_Main.py) and [train_and_test_AntiACP_Alternate.py](https://github.com/yanngfengwu/CACPP/blob/master/model/train_and_test_AntiACP_Alternate.py) which are separately used on the Main Dataset and the Alternate Dataset. With the whole project, you can run both files directly.
