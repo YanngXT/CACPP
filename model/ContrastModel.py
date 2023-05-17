@@ -14,12 +14,10 @@ class newModel(nn.Module):
         self.devicenum = config.devicenum
 
         # self.filter_sizes = [1, 2]  # ACPred
-        self.filter_sizes = [1, 2, 4, 8, 16, 32]  # Contrast
-        self.embedding_dim = 50  # 100  # the MGF process dim
+        self.filter_sizes = [1, 2, 3, 4, 6, 8, 16, 32]  # Contrast
+        self.embedding_dim = 100  # the MGF process dim
         dim_cnn_out = 128
-        # filter_num = 16  # 在ACPred用的这个
-        filter_num = 32  # 在contrast用的这个
-        # filter_num = 64  # 在textCNN（实验）用的这个
+        filter_num = 64  
 
         self.embedding = nn.Embedding(vocab_size, self.embedding_dim, padding_idx=0)
         self.convs = nn.ModuleList(
